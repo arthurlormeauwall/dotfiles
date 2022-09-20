@@ -1,0 +1,3 @@
+if [ -r ~/.dotfiles/.zsh/.aliasdir/.commonAliases ]; then
+    source ~/.dotfiles/.zsh/.aliasdir/.commonAliases
+fi
