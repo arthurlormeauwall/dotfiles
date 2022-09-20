@@ -1,0 +1,6 @@
+alias int='cd ~/ideaprojects;'
+alias railservice='int; cd rail-service;'
+alias rbs='int;cd rail-booking-service;'
+alias ctps='int;cd checkout-train-plugin-service;'
+alias rails='int; cd rails;'
+alias pad='int; cd rail-silverrail-pad;'

@@ -1,0 +1,2 @@
+
+alias reverseproxy='int;java -jar reverse-proxy.jar --spring.config.location=reverseProxyOverrides.yaml;'

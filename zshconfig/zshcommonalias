@@ -1,0 +1,19 @@
+# aliases to access and edit aliases and environnement variables
+alias varenv='vim $ZSHCONFIG/.zshenv'
+alias rc='vim $ZSHCONFIG/.zshrc'
+alias config='cd $DOT_FILES'
+alias ohmycustom='cd $ZSHCONFIG/oh-my-custom'
+alias aliassources='vim $ZSHCONFIG/aliassources.sh'
+
+#util aliases
+alias z='exec zsh -l;'
+alias ..='cd ..'
+alias t="tmux"
+
+
+# aliases to access directories
+alias notabene='cd /Users/arwall/Documents/NotaBene;'
+
+#Common alias
+alias aliases='vim $ZSHCONFIG/commonalias;'
+

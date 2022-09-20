@@ -1,0 +1,2 @@
+alias vsconfig='vim $VSCONFIG/vsalias'
+alias vsconfigdir='cd $VSCONFIG'

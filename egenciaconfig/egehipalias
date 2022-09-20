@@ -1,0 +1,3 @@
+alias logvault='hip -e lab -r eu-west-1 pole vault login -method=ldap'
+alias logaws='hip -e lab -r eu-west-1 aws-creds'
+alias refresher='login-aws; date; while sleep 900; do aws-login; date; done'

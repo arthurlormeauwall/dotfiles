@@ -1,0 +1,9 @@
+alias javaconfigdir='cd $JAVACONFIG'
+alias javaconfig='vim $JAVACONFIG/javaalias'
+alias m='mvn clean install;'	
+alias msbr='mvn spring-boot:run'
+
+#JAVA
+export JAVA_HOME=$/usr/libexec/java_home
+export MAVEN_HOME=~/apache-maven-3.8.5
+export PATH=$PATH:$MAVEN_HOME/bin

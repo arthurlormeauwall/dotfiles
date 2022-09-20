@@ -1,0 +1,19 @@
+alias gitconfigdir='cd $GITCONFIG'
+alias gitconfig='vim $GITCONFIG/gitalias'
+
+alias pullmaster='git checkout master; git pull'
+alias gm='git merge'
+
+alias gcko='git checkout'
+
+alias gsetupstream='git push --set-upstream origin'
+alias gb='git branch'
+alias gdelremote='git push -d origin'
+alias gdelbranch='git branch -d'
+
+alias gall='git add --all'
+alias gc='git commit -m'
+alias gp='git push'
+alias gpwip='git add --all; git commit -m "working progress";git push;'
+alias gpf='git push --force'
+

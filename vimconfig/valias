@@ -1,0 +1,8 @@
+
+#vim aliases
+alias vimconfig='vim $VIMCONFIG/valias;'
+alias vimconfigdir='cd $VIMCONFIG'
+alias vk='vim .'
+alias ideavitovi='cat ~/.ideavimrc>~/.vimrc'
+alias vitoideavi='cat ~/.vimrc>~/.ideavimrc'
+alias vimrc='vim ~/.vimrc;'
