@@ -1,3 +1,4 @@
+#
 alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='vim $GITCONFIG/gitalias'
 
