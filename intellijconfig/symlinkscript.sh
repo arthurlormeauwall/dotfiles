@@ -1,6 +1,6 @@
 
-if [ -r ~/.config/JetBrains ]; then
+if [ -r ~/.ideavimrc ]; then
 echo doNothing on jetbrains  dir config
 else
-ln -s $INTCONFIG/JetBrains ~/.config/JetBrains
+ln -s $INTCONFIG/.ideavimrc ~/.ideavimrc
 fi

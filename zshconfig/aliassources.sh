@@ -16,8 +16,8 @@ fi
 if [ -r $SDKMANCONFIG/sdkmanconfig ]; then
     source $SDKMANCONFIG/sdkmanconfig            #SDK man 
 fi
-if [ -r $INTCONFIG/intalias ]; then
-    source $INTCONFIG/intalias            #Intellij 
+if [ -r $INTCONFIG/intalias.sh ]; then
+    source $INTCONFIG/intalias.sh            #Intellij 
 fi
 if [ -r $EGENCIACONFIG/egealias ]; then
     source $EGENCIACONFIG/egealias    #Egencia 

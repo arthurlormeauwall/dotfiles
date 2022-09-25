@@ -1,3 +1,0 @@
-alias intconfigdir='cd $INTCONFIG'
-alias intconfig='vim $INTCONFIG/intalias'
-alias int='cd ~/IdeaProjects'
