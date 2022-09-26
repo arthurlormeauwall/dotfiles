@@ -14,7 +14,9 @@ alias gdelbranch='git branch -d'
 
 alias gall='git add --all'
 alias gc='git commit -m'
-alias gp='git push'
+alias gpush='git push'
+alias gpull='git pull'
+
 alias gpwip='git add --all; git commit -m "working progress";git push;'
 alias gpf='git push --force'
 

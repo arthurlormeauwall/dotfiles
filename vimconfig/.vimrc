@@ -23,4 +23,5 @@ function! NumberToggle()
     endif
 endfunction
 
+syntax on
 nnoremap <C-n> :call NumberToggle()<CR>
