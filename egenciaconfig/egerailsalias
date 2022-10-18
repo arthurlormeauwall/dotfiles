@@ -1,5 +1,6 @@
-
+#
 alias testr='cd rails-webapp;  npm test -- -u;cd ..;'
 alias buildr='mvn clean install -DskipTests -Pno-acceptance' 
 alias runr='cd rails-webapp;mvn spring-boot:run -DskipTests;cd ..'
-alias buildandrunr='testr;buildr;runr;'
+alias buildandrunr='buildr;runr'
+alias testbuildandrunr='testr;buildr;runr;'

@@ -11,7 +11,8 @@ nnoremap <C-k> 3k
 noremap y "0y
 noremap p "0p
 nnoremap <C-p> p
-
+syntax on
+set backspace=indent,eol,start
 " Relative or absolute number lines
 function! NumberToggle()
     if(&nu == 1)
@@ -22,6 +23,4 @@ function! NumberToggle()
         set nu
     endif
 endfunction
-
-syntax on
 nnoremap <C-n> :call NumberToggle()<CR>

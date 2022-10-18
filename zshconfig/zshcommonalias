@@ -1,6 +1,7 @@
 # aliases to access and edit aliases and environnement variables
 alias varenv='vim $ZSHCONFIG/.zshenv'
 alias rc='vim $ZSHCONFIG/.zshrc'
+alias localenv='vim ~/.zshlocalenv'
 alias config='cd $DOT_FILES'
 alias ohmycustom='cd $ZSHCONFIG/oh-my-custom'
 alias aliassources='vim $ZSHCONFIG/aliassources.sh'
