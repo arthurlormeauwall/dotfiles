@@ -1,5 +1,10 @@
 alias dotfiles="cd ~/.config/dotfiles"
 alias aliases="nvim ~/.config/dotfiles/aliases.sh" 
+alias pushDotFiles="./~/.config/dotfiles/pushToGH.sh"
+
+
+
+
 alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='vim $GITCONFIG/gitalias'
 
