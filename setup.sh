@@ -9,9 +9,11 @@ export JAVACONFIG=$DOT_FILES/javaconfig
 export SDKMANCONFIG=$DOT_FILES/sdkmanconfig
 export EGENCIACONFIG=$DOT_FILES/egenciaconfig
 export VSCCONFIG=$DOT_FILES/vsconfig
+
 chmod +x zshconfig/symlinkscript.sh 
 chmod +x vimconfig/symlinkscript.sh
 chmod +x gitconfig/symlinkscript.sh
+
 ./zshconfig/symlinkscript.sh
 ./vimconfig/symlinkscript.sh
 ./gitconfig/symlinkscript.sh

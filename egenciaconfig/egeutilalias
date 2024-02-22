@@ -1,4 +1,0 @@
-
-alias reverseproxy='int;java -jar reverse-proxy.jar --spring.config.location=reverseProxyOverrides.yaml;'
-# aliases to access directories
-alias notabene='cd /Users/arwall/Documents/NotaBene;'

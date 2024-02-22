@@ -1,7 +1,0 @@
-[user]
-	name = arwall
-	email = arwall@egencia.com
-[core]
-	autocrlf = input
-[pull]
-	rebase = true
