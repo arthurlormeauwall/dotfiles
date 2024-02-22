@@ -1,6 +1,6 @@
 alias dotfiles="cd ~/.config/dotfiles"
 alias aliases="nvim ~/.config/dotfiles/aliases.sh" 
-alias pushDotFiles="./pushToGH.sh"
+alias pushdot="./pushToGH.sh"
 
 
 
