@@ -1,3 +1,0 @@
-alias zshconfigdir='cd $ZSHCONFIG'
-alias zshconfig='vim $ZSHCONFIG/zshalias'
-alias zshcommonconfig='vim $ZSHCONFIG/zshcommonalias'
