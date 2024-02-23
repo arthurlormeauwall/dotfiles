@@ -3,8 +3,6 @@ alias aliases="nvim ~/.config/dotfiles/aliases.sh"
 alias pushdot="./pushToGH.sh"
 
 
-
-
 alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='vim $GITCONFIG/gitalias'
 
@@ -44,3 +42,4 @@ export PATH=$PATH:$MAVEN_HOME/bin
 
 #vim aliases
 alias vk='nvim .'
+alias v='nvim'

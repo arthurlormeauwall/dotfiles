@@ -22,6 +22,7 @@ nnoremap <A-k> 3k
 noremap <S-y> y
 noremap y "0y
 noremap p "0p
+noremap <A-p> "0P"
 nnoremap <C-p> p
 nnoremap <C-v> V
 nnoremap V <C-v>
@@ -79,7 +80,8 @@ keymap("v", "<C-j>", "<gv", opts)
 keymap("v", "<C-k>", ">gv", opts)
 keymap("v", "ui", "<ESC>", opts)
 -- Stay in indent mode
-
+--eefdfdkkjvedfqsdldfzevdsiesdf_sffdfdkkjvedfqsdldfzevdsiesdf_sf(sdfl_sdja)
+--
 -- Move text up and down
 keymap("v", "<S-j>", ":m .+1<CR>==", opts)
 keymap("v", "<S-k>", ":m .-2<CR>==", opts)
