@@ -74,10 +74,15 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  catppuccin = {
+  ["highlight.lua"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
+    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/highlight.lua",
+    url = "https://github.com/nvim-treesitter/highlight.lua"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

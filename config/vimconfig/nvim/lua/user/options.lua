@@ -36,6 +36,9 @@ local options = {
 }
 
 vim.opt.shortmess:append "c"
+vim.opt.syntax=on
+vim.opt.syntax=enable
+vim.opt.filetype=on
 
 for k, v in pairs(options) do
   vim.opt[k] = v
