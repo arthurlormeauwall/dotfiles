@@ -1,5 +1,5 @@
 require "user.options"
-require "user.keymaps_frAzerty"
+require "user.keymaps"
 require "user.plugins"
 require "user.capuTheme"
 

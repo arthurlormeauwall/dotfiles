@@ -2,7 +2,6 @@ alias dotfiles="cd ~/.config/dotfiles"
 alias aliases="nvim ~/.config/dotfiles/aliases.sh" 
 alias pushdot="./pushToGH.sh"
 
-
 alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='vim $GITCONFIG/gitalias'
 
@@ -43,3 +42,6 @@ export PATH=$PATH:$MAVEN_HOME/bin
 #vim aliases
 alias vk='nvim .'
 alias v='nvim'
+rlias vimkeymap="cd ~/.config/dotfiles/config/vimconfig/nvim/lua/user"
+alias setMacVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_mac.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
+alias setPcVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_pc.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
