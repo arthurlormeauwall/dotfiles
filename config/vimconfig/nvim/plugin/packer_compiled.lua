@@ -74,15 +74,15 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  ["highlight.lua"] = {
+  ["nightfox.nvim"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/highlight.lua",
-    url = "https://github.com/nvim-treesitter/highlight.lua"
+    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
   },
-  ["oxocarbon.nvim"] = {
+  ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
-    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
+    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,

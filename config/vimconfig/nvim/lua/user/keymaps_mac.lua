@@ -3,22 +3,21 @@
 --   visual_mode = "v",
 --   visual_block_mode = "x",
 --   term_mode = "t",
+--
 --   command_mode = "c",
 --
 --
 local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
-
+--Local
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
-
 --my own key maps :)
+  
 vim.cmd([[
 noremap e b
 noremap r e
-nnoremap Ï 3j
-nnoremap È 3k
 noremap <S-y> y
 noremap y "0y
 noremap p "0p
@@ -26,7 +25,20 @@ noremap <A-p> "0P"
 nnoremap <C-p> p
 nnoremap <C-v> V
 nnoremap V <C-v>
-set number
+
+nnoremap ∂ <C-d>zz
+nnoremap º <C-u>zz
+nnoremap Ï 3j
+nnoremap È 3k
+
+imap jk <ESC>
+vmap ui <ESC>
+
+vmap <S-j> :m .+1<CR>==
+vmap <S-k> :m .-2<CR>==
+vmap <C-j> <gv
+vmap <C-k> >gv
+
 syntax on
 function! NumberToggle()
   if(&nu == 1)
@@ -39,11 +51,6 @@ function! NumberToggle()
 endfunction
 nnoremap <C-n> :call NumberToggle()<CR>
 ]])
-
-
---half page then zz to put cursor middle of screen
-keymap("n", "∂", "<C-d>zz", opts)
-keymap("n", "º", "<C-u>zz", opts)
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
@@ -60,7 +67,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 keymap("n", "<leader>o", "o<ESC>", opts)
 keymap("n", "<leader>O", "O<ESC>", opts)
-
+keymap("n", "<leader>c", ":set ignorecase! ignorecase?<CR>", opts)
 -- Resize with arrows
 keymap("n", "<S-Right>", ":resize +2<CR>", opts)
 keymap("n", "<S-Left>", ":resize -2<CR>", opts)
@@ -71,21 +78,6 @@ keymap("n", "<C-Left>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Insert --
--- Press jk fast to enter
-keymap("i", "jk", "<ESC>", opts)
-
--- Visual --
-keymap("v", "<C-j>", "<gv", opts)
-keymap("v", "<C-k>", ">gv", opts)
-keymap("v", "ui", "<ESC>", opts)
--- Stay in indent mode
---
--- Move text up and down
-keymap("v", "<S-j>", ":m .+1<CR>==", opts)
-keymap("v", "<S-k>", ":m .-2<CR>==", opts)
---keymap("v", "p", '"_dP', opts)
-  
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
@@ -99,3 +91,4 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+

@@ -101,3 +101,17 @@ alias z="source ~/.zshrc"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+export HOMEBREW_ARTIFACTORY_API_TOKEN=AKCp8mYe3uUVY42mxhSh9swvLHpcDf2FSktL4t9VpqmqrTktrecc9qWt8QLMwXpUyGDPA6LzT
+export HOMEBREW_ARTIFACTORY_API_USER=arwall
+export HOMEBREW_ARTIFACTORY_API_TOKEN=AKCp8mYe3uUVY42mxhSh9swvLHpcDf2FSktL4t9VpqmqrTktrecc9qWt8QLMwXpUyGDPA6LzT
+export HOMEBREW_ARTIFACTORY_API_USER=arwall
+export HOMEBREW_ARTIFACTORY_API_TOKEN=AKCp8mYe3uUVY42mxhSh9swvLHpcDf2FSktL4t9VpqmqrTktrecc9qWt8QLMwXpUyGDPA6LzT
+export HOMEBREW_ARTIFACTORY_API_USER=arwall
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+export HOMEBREW_ARTIFACTORY_API_TOKEN=AKCp8mYe3uUVY42mxhSh9swvLHpcDf2FSktL4t9VpqmqrTktrecc9qWt8QLMwXpUyGDPA6LzT
+export HOMEBREW_ARTIFACTORY_API_USER=arwall
+export HOMEBREW_ARTIFACTORY_API_TOKEN=AKCp8mYe3uUVY42mxhSh9swvLHpcDf2FSktL4t9VpqmqrTktrecc9qWt8QLMwXpUyGDPA6LzT
+export HOMEBREW_ARTIFACTORY_API_USER=arwall

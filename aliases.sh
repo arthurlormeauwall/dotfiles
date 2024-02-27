@@ -35,13 +35,14 @@ alias m='mvn clean install;'
 alias msbr='mvn spring-boot:run'
 
 #JAVA
-export JAVA_HOME=$/usr/libexec/java_home
+#export JAVA_HOME=$/usr/libexec/java_home
 export MAVEN_HOME=~/apache-maven-3.8.5
 export PATH=$PATH:$MAVEN_HOME/bin
+#export PATH=$PATH:$JAVA_HOME/bin
 
 #vim aliases
 alias vk='nvim .'
 alias v='nvim'
-rlias vimkeymap="cd ~/.config/dotfiles/config/vimconfig/nvim/lua/user"
+alias vimkeymap="cd ~/.config/dotfiles/config/vimconfig/nvim/lua/user"
 alias setMacVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_mac.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
 alias setPcVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_pc.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
