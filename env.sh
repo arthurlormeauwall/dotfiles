@@ -1,5 +1,7 @@
 export DOTFILES=$HOME/dotfiles
+export LOCALDOTFILES=$HOME/localdotfiles
 export CONFIG=$DOTFILES/config
+export LOCALCONFIG=$LOCALDOTFILES/config
 
 #common
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -12,10 +14,6 @@ source $ZSHCONFIG/zsh_config_env.sh
 #git
 export GITCONFIG=$DOTFILES/config/gitconfig
 source $GITCONFIG/git_config_env.sh
-
-#ege
-export EGECONFIG=$DOTFILES/config/egeconfig
-source $EGECONFIG/ege_config_env.sh
 
 #intellij
 export INTELLIJCONFIG=$DOTFILES/config/intellijconfig
@@ -38,10 +36,3 @@ export SSHCONFIG=$DOTFILES/config/sshconfig
 source $SSHCONFIG/ssh_config_env.sh
 
 
- # test 
- export testCONFIG=/Users/alorme/dotfiles/config/testconfig ; 
- source $testCONFIG/test_config_env.sh
-
- # test 
-export testCONFIG=/Users/alorme/dotfiles/config/testconfig ; 
-source $testCONFIG/test_config_env.sh
