@@ -1,5 +1,6 @@
-alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='nvim $GITCONFIG/git_config_aliases.sh'
+alias gitenv='nvim $GITCONFIG/git_config_env.sh'
+alias gitconfigdir='cd $GITCONFIG'
 
 alias gpullmaster='git checkout master; git pull'
 alias gm='git merge'

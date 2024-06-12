@@ -1,5 +1,7 @@
 alias mvnconfig='nvim $MAVENCONFIG/mvn_config_aliases.sh'
-alias mvnenvs='nvim $MAVENVCONFIG/mvn_config_env.sh'
+alias mvnconfigdir='nvim $MAVENCONFIG'
+alias mvnenv='nvim $MAVENVCONFIG/mvn_config_env.sh'
+
 alias m='mvn clean install;'	
 alias mp='mvn --quiet clean install -Plocal ;'
 alias msbr='mvn spring-boot:run'
