@@ -1,4 +1,4 @@
-source $HOME/.zshrc
+source $DOTFILES/aliases.sh
 persssh
 git add --all
 git commit -a -m "wip"
