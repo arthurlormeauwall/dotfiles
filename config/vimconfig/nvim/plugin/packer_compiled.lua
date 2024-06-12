@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/arwall/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?.lua;/Users/arwall/.cache/nvim/packer_hererocks/2.1.1707061634/share/lua/5.1/?/init.lua;/Users/arwall/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?.lua;/Users/arwall/.cache/nvim/packer_hererocks/2.1.1707061634/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/arwall/.cache/nvim/packer_hererocks/2.1.1707061634/lib/lua/5.1/?.so"
+local package_path_str = "/Users/alorme/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?.lua;/Users/alorme/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?/init.lua;/Users/alorme/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?.lua;/Users/alorme/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/alorme/.cache/nvim/packer_hererocks/2.1.1710088188/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,27 +76,27 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["nightfox.nvim"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/Users/arwall/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   }
 }

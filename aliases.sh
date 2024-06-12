@@ -1,6 +1,9 @@
-alias dotfiles="cd ~/.config/dotfiles"
-alias aliases="nvim ~/.config/dotfiles/aliases.sh" 
-alias pushdot="./pushToGH.sh"
+alias dotfiles="cd ~/dotfiles"
+alias aliases="nvim ~/dotfiles/aliases.sh" 
+alias home="cd ~"
+
+alias logaws="hip -e lab aws-creds -u alorme;" 
+alias logaws2="eval /"$(hip -e lab aws configure export-credentials --format env)/""
 
 alias gitconfigdir='cd $GITCONFIG'
 alias gitconfig='vim $GITCONFIG/gitalias'
@@ -22,6 +25,7 @@ alias gpull='git pull'
 
 alias gpwip='git add --all; git commit -m "working progress";git push;'
 alias gpf='git push --force'
+
 function gcreatenewbranch {
 gpullmaster
 gcko -b $1
@@ -32,13 +36,17 @@ gsetupstream $1
 alias int='cd ~/IdeaProjects'
 alias ideavimrc='vim ~/.ideavimrc;'
 alias m='mvn clean install;'	
+alias mp='mvn --quiet clean install -Plocal ;'
 alias msbr='mvn spring-boot:run'
+alias mpurgeandcleaninstall='mvn dependency:purge-local-repository -Dinclude:com.googlecode.owasp-java-html-sanitizer -DresolutionFuzziness=groupId -Dverbose ; mvn clean install'
 
-#JAVA
-#export JAVA_HOME=$/usr/libexec/java_home
-export MAVEN_HOME=~/apache-maven-3.8.5
-export PATH=$PATH:$MAVEN_HOME/bin
-#export PATH=$PATH:$JAVA_HOME/bin
+function rsruntest {
+  mvn verify -B -f $1 -Plocal -Dit.test=$2 failsafe:integration-test
+}
+
+function rsdebugtest {
+ mvn verify -B -f $1 -Pmaui -Dit.test=$2 failsafe:integration-test -Dmaven.failsafe.debug
+}
 
 #vim aliases
 alias vk='nvim .'
@@ -46,3 +54,8 @@ alias v='nvim'
 alias vimkeymap="cd ~/.config/dotfiles/config/vimconfig/nvim/lua/user"
 alias setMacVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_mac.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
 alias setPcVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_pc.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
+
+#ssh
+alias egessh='ssh-add -D ; ssh-add ~/.ssh/id_ed25519'
+alias persssh='ssh-add -D ; ssh-add ~/.ssh/id_ed255119_pers'
+

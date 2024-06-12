@@ -16,6 +16,7 @@ local keymap = vim.api.nvim_set_keymap
 --my own key maps :)
   
 vim.cmd([[
+set relativenumber
 noremap e b
 noremap r e
 noremap <S-y> y
