@@ -1,11 +1,19 @@
 #Common
 alias dotfiles="cd $HOME/dotfiles"
-alias config="cd $DOTFILES/config"
+alias config="cd $CONFIG"
 alias aliases="nvim $DOTFILES/aliases.sh" 
 alias envs="nvim $HOME/.zshenv"
 alias zrc="nvim $HOME/.zshrc"
 alias home="cd $HOME"
 alias pushdotfiles='pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste)'
+
+function createconfig {
+  cd $CONFIG
+  mkdir $1config
+  cd $1config
+  touch $1_config_aliases.sh
+  touch $1_config_env.sh  
+}
 
 #Zsh
 source $ZSHCONFIG/zsh_config_aliases.sh
@@ -27,5 +35,8 @@ source $NVIMCONFIG/nvim_config_aliases.sh
 
 #SDKMAN
 source $SDKMANCONFIG/sdkman_config_aliases.sh
+
+#ssh
+source $SSHCONFIG/ssh_config_aliases.sh
 
 

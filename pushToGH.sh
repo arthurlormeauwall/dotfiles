@@ -1,4 +1,4 @@
-source $DOTFILES/aliases.sh
+source $SSHCONFIG/ssh_config_aliases.sh
 persssh
 git add --all
 git commit -a -m "wip"
