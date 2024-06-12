@@ -1,40 +1,25 @@
-alias dotfiles="cd ~/dotfiles"
-alias aliases="nvim ~/dotfiles/aliases.sh" 
-alias home="cd ~"
+#Common
+alias dotfiles="cd $HOME/dotfiles"
+alias aliases="nvim $DOTFILES/aliases.sh" 
+alias envs="nvim $HOME/.zshenv"
+alias zrc="nvim $HOME/.zshrc"
+alias home="cd $HOME"
+alias pushdotfiles="pwd | pbcopy ; cd $DOTFILES ; chmode +x pushToGH.sh ; ./pushToGH.sh ; cd $pbpaste"
 
-alias logaws="hip -e lab aws-creds -u alorme;" 
-alias logaws2="eval /"$(hip -e lab aws configure export-credentials --format env)/""
+#Zsh
+source $ZSHCONFIG/zsh_config_aliases.sh
 
-alias gitconfigdir='cd $GITCONFIG'
-alias gitconfig='vim $GITCONFIG/gitalias'
+#Git
+source $GITCONFIG/git_config_aliases.sh
 
-alias gpullmaster='git checkout master; git pull'
-alias gm='git merge'
+#EGE
+source $EGECONFIG/ege_config_aliases.sh
 
-alias gcko='git checkout'
-
-alias gsetupstream='git push --set-upstream origin'
-alias gb='git branch'
-alias gdelremote='git push -d origin'
-alias gdelbranch='git branch -d'
-
-alias gall='git add --all'
-alias gc='git commit -m;'
-alias gpush='git push'
-alias gpull='git pull'
-
-alias gpwip='git add --all; git commit -m "working progress";git push;'
-alias gpf='git push --force'
-
-function gcreatenewbranch {
-gpullmaster
-gcko -b $1
-gsetupstream $1
-}
-
-#INTELLIJ
+#INTELLI J
 alias int='cd ~/IdeaProjects'
 alias ideavimrc='vim ~/.ideavimrc;'
+
+#MAVEN
 alias m='mvn clean install;'	
 alias mp='mvn --quiet clean install -Plocal ;'
 alias msbr='mvn spring-boot:run'
@@ -48,14 +33,11 @@ function rsdebugtest {
  mvn verify -B -f $1 -Pmaui -Dit.test=$2 failsafe:integration-test -Dmaven.failsafe.debug
 }
 
-#vim aliases
+#VIM
 alias vk='nvim .'
 alias v='nvim'
 alias vimkeymap="cd ~/.config/dotfiles/config/vimconfig/nvim/lua/user"
 alias setMacVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_mac.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
 alias setPcVimKeybinding="cat ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps_pc.lua > ~/.config/dotfiles/config/vimconfig/nvim/lua/user/keymaps.lua"
 
-#ssh
-alias egessh='ssh-add -D ; ssh-add ~/.ssh/id_ed25519'
-alias persssh='ssh-add -D ; ssh-add ~/.ssh/id_ed255119_pers'
 
