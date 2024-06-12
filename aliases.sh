@@ -4,7 +4,7 @@ alias aliases="nvim $DOTFILES/aliases.sh"
 alias envs="nvim $HOME/.zshenv"
 alias zrc="nvim $HOME/.zshrc"
 alias home="cd $HOME"
-alias pushdotfiles="pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste);"
+alias pushdotfiles='pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste);'
 
 #Zsh
 source $ZSHCONFIG/zsh_config_aliases.sh
