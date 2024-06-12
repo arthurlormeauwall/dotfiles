@@ -16,22 +16,11 @@ source $GITCONFIG/git_config_aliases.sh
 source $EGECONFIG/ege_config_aliases.sh
 
 #INTELLI J
-alias int='cd ~/IdeaProjects'
-alias ideavimrc='vim ~/.ideavimrc;'
+source $INTELLIJCONFIG/int_config_aliases.sh
 
 #MAVEN
-alias m='mvn clean install;'	
-alias mp='mvn --quiet clean install -Plocal ;'
-alias msbr='mvn spring-boot:run'
-alias mpurgeandcleaninstall='mvn dependency:purge-local-repository -Dinclude:com.googlecode.owasp-java-html-sanitizer -DresolutionFuzziness=groupId -Dverbose ; mvn clean install'
+source $MAVENCONFIG/mvn_config_aliases.sh
 
-function rsruntest {
-  mvn verify -B -f $1 -Plocal -Dit.test=$2 failsafe:integration-test
-}
-
-function rsdebugtest {
- mvn verify -B -f $1 -Pmaui -Dit.test=$2 failsafe:integration-test -Dmaven.failsafe.debug
-}
 
 #VIM
 alias vk='nvim .'
