@@ -1,11 +1,7 @@
-export DOTFILES=$HOME/dotfiles
-export LOCALDOTFILES=$HOME/localdotfiles
-export CONFIG=$DOTFILES/config
-export LOCALCONFIG=$LOCALDOTFILES/config
-
-#common
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/go/bin:$PATH
+########################## CONFIGS ########################
+ # common 
+export commonCONFIG=/Users/alorme/dotfiles/config/commonconfig ; 
+source $commonCONFIG/common_config_env.sh
 
 #zsh
 export ZSHCONFIG=$DOTFILES/config/zshconfig
@@ -35,4 +31,6 @@ source $SDKMANCONFIG/sdkman_config_env.sh
 export SSHCONFIG=$DOTFILES/config/sshconfig
 source $SSHCONFIG/ssh_config_env.sh
 
-
+ # vscode 
+export vscodeCONFIG=/Users/alorme/dotfiles/config/vscodeconfig ; 
+source $vscodeCONFIG/vscode_config_env.sh

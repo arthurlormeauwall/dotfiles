@@ -1,5 +1,5 @@
 alias mvnconfig='nvim $MAVENCONFIG/mvn_config_aliases.sh'
-alias mvnconfigdir='nvim $MAVENCONFIG'
+alias mvnconfigdir='cd $MAVENCONFIG'
 alias mvnenv='nvim $MAVENVCONFIG/mvn_config_env.sh'
 
 alias m='mvn clean install;'	
