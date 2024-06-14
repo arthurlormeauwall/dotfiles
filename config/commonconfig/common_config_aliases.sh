@@ -18,3 +18,8 @@ alias zrc="nvim $HOME/.zshrc"
 alias home="cd $HOME"
 alias pushdotfiles='pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste)'
 
+function mkcd {
+  mkdir $1
+  cd $1
+}
+

@@ -32,3 +32,6 @@ source $SSHCONFIG/ssh_config_aliases.sh
 
 #vscode 
 source $vscodeCONFIG/vscode_config_aliases.sh
+
+ # alacritty 
+source $alacrittyCONFIG/alacritty_config_aliases.sh

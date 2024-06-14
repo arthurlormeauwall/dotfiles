@@ -34,3 +34,7 @@ source $SSHCONFIG/ssh_config_env.sh
  # vscode 
 export vscodeCONFIG=/Users/alorme/dotfiles/config/vscodeconfig ; 
 source $vscodeCONFIG/vscode_config_env.sh
+
+ # alacritty 
+export alacrittyCONFIG=/Users/alorme/dotfiles/config/alacrittyconfig ; 
+source $alacrittyCONFIG/alacritty_config_env.sh

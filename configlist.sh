@@ -10,4 +10,5 @@ utilconfig
 vimconfig
 vscodeconfig
 zshconfig
+alacrittyconfig
 '"
