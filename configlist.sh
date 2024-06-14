@@ -11,4 +11,5 @@ vimconfig
 vscodeconfig
 zshconfig
 alacrittyconfig
+tmuxconfig
 '"

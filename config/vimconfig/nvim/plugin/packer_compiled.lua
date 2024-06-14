@@ -74,15 +74,30 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  catppuccin = {
+  ["bluloco.nvim"] = {
     loaded = true,
-    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/catppuccin",
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/bluloco.nvim",
+    url = "https://github.com/uloco/bluloco.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
+  },
+  nvim = {
+    loaded = true,
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/nvim",
     url = "https://github.com/catppuccin/nvim"
   },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["onenord.nvim"] = {
+    loaded = true,
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/onenord.nvim",
+    url = "https://github.com/rmehri01/onenord.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -98,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/Users/alorme/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   }
 }
 

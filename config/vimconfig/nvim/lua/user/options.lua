@@ -33,7 +33,8 @@ local options = {
   sidescrolloff = 10,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
   breakindent = true,
-  list=true
+  list=true,
+  background=light
 }
 
 vim.opt.shortmess:append "c"
@@ -50,16 +51,4 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
--- [[ Basic Autocommands ]]
---  See `:help lua-guide-autocommands`
 
--- Highlight when yanking (copying) text
---  Try it with `yap` in normal mode
---  See `:help vim.highlight.on_yank()`
-vim.api.nvim_create_autocmd('TextYankPost', {
-  desc = 'Highlight when yanking (copying) text',
-  group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-})

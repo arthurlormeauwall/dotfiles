@@ -1,7 +1,5 @@
-require "user.catppuccin"
+require "user.theme"
 require "user.options"
 require "user.keymaps"
 require "user.plugins"
 require "user.treesitter"
---vim.cmd "colorscheme darkblue"
-vim.cmd.colorscheme "catppuccin-latte"

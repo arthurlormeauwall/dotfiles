@@ -7,7 +7,7 @@ function createconfig {
   mkdir $1config
   cd $1config
   touch $1_config_aliases.sh
-  touch $1_config_env.sh  
+  touch $1_config_env.sh
 
   cd $DOTFILES
   echo "\n # $1 \nexport $1CONFIG=$DOTFILES/config/$1config ; \nsource \$$1CONFIG/$1_config_env.sh">> env.sh
@@ -24,6 +24,7 @@ function createconfig {
   echo "'\"">>configlist.sh
 
   source $HOME/.zshrc
+  cd $CONFIG/$1config
 }
 
 function createlocalconfig {
@@ -48,6 +49,7 @@ function createlocalconfig {
   echo "'\"">>localconfiglist.sh
 
   source $HOME/.zshrc
+  cd $CONFIG/$1config
 }
 
 function importCertInSdkman {

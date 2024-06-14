@@ -8,5 +8,9 @@ alias vimkeymap="cd $NVIMCONFIG/nvim/lua/user"
 alias setMacVimKeybinding="cat $NVIMCONFIG/nvim/lua/user/keymaps_mac.lua >$NVIMCONFIG/nvim/lua/user/keymaps.lua"
 alias setPcVimKeybinding="cat $NVIMCONFIG/nvim/lua/user/keymaps_pc.lua > $NVIMCONFIG/nvim/lua/user/keymaps.lua"
 
+alias vimtheme="nvim $NVIMCONFIG/nvim/lua/user/theme.lua"
+alias vimplugin="nvim $NVIMCONFIG/nvim/lua/user/plugins.lua"
+alias vimoption="nvim $NVIMCONFIG/nvim/lua/user/options.lua"
+
 #kickstart (cf : https://github.com/nvim-lua/kickstart.nvim/tree/master)
 alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'

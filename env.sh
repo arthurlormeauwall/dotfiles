@@ -38,3 +38,7 @@ source $vscodeCONFIG/vscode_config_env.sh
  # alacritty 
 export alacrittyCONFIG=/Users/alorme/dotfiles/config/alacrittyconfig ; 
 source $alacrittyCONFIG/alacritty_config_env.sh
+
+ # tmux 
+export tmuxCONFIG=/Users/alorme/dotfiles/config/tmuxconfig ; 
+source $tmuxCONFIG/tmux_config_env.sh

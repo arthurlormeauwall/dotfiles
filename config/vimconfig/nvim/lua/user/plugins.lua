@@ -47,6 +47,12 @@ return packer.startup(function(use)
 
   ------------------------------------------------------------------------------
   use "catppuccin/nvim"
+  use 'rmehri01/onenord.nvim'
+  use { "rose-pine/neovim", as = "rose-pine" }
+  use {
+    'uloco/bluloco.nvim',
+    requires = { 'rktjmp/lush.nvim' }
+  }
   use({"nvim-treesitter/nvim-treesitter",
     run = function()
       local ts_update = require("nvim-treesitter.install").update({ with_sync = true })

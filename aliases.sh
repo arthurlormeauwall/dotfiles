@@ -35,3 +35,6 @@ source $vscodeCONFIG/vscode_config_aliases.sh
 
  # alacritty 
 source $alacrittyCONFIG/alacritty_config_aliases.sh
+
+ # tmux 
+source $tmuxCONFIG/tmux_config_aliases.sh
