@@ -22,4 +22,5 @@ function mkcd {
   mkdir $1
   cd $1
 }
-
+alias rmrf="rm -rf"
+alias cpr="cp -r"

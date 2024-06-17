@@ -13,4 +13,4 @@ alias vimplugin="nvim $NVIMCONFIG/nvim/lua/user/plugins.lua"
 alias vimoption="nvim $NVIMCONFIG/nvim/lua/user/options.lua"
 
 #kickstart (cf : https://github.com/nvim-lua/kickstart.nvim/tree/master)
-alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
+alias vimk='NVIM_APPNAME="nvim-k" nvim'
