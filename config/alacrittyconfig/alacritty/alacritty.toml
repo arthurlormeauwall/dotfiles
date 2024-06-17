@@ -1,6 +1,6 @@
 import =  [
-   "/Users/alorme/dotfiles/config/alacrittyconfig/alacritty/themes/alacritty-themes/themes/ayu_light.toml"
+   "$CONFIG/alacrittyconfig/alacritty/themes/alacritty-themes/mytheme.toml"
 ]
 [font]
-size = 15
+size =13
 

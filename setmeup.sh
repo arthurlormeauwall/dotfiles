@@ -1,7 +1,7 @@
-mv ~/.zshrc ~/.oldzshrc
-mv ~/.config/tmux/ ~/.config/old-tmux
-mv ~/.config/alacritty ~/.config/old-alacritty
-mv ~/.config/nvim ~/.config/odl-nvim
+rm -rf ~/.zshrc 
+rm -rf ~/.config/tmux/     
+rm -rf ~/.config/alacritty 
+rm -rf ~/.config/nvim      
 
 ln -s ~/dotfiles/config/zshconfig/.zshrc ~/.zshrc
 ln -s ~/dotfiles/config/alacrittyconfig/alacritty  ~/.config/alacritty

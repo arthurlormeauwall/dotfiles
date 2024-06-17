@@ -1,44 +1,46 @@
+export DOTFILES=~/dotfiles
+export CONFIG=$DOTFILES/config
 ########################## CONFIGS ########################
  # common 
-export commonCONFIG=/Users/alorme/dotfiles/config/commonconfig ; 
+export commonCONFIG=$CONFIG/commonconfig
 source $commonCONFIG/common_config_env.sh
 
 #zsh
-export ZSHCONFIG=$DOTFILES/config/zshconfig
+export ZSHCONFIG=$CONFIG/zshconfig
 source $ZSHCONFIG/zsh_config_env.sh
 
 #git
-export GITCONFIG=$DOTFILES/config/gitconfig
+export GITCONFIG=$CONFIG/gitconfig
 source $GITCONFIG/git_config_env.sh
 
 #intellij
-export INTELLIJCONFIG=$DOTFILES/config/intellijconfig
+export INTELLIJCONFIG=$CONFIG/intellijconfig
 source $INTELLIJCONFIG/int_config_env.sh
 
 #maven
-export MAVENCONFIG=$DOTFILES/config/mavenconfig
+export MAVENCONFIG=$CONFIG/mavenconfig
 source $MAVENCONFIG/mvn_config_env.sh
 
 #NVM
-export NVIMCONFIG=$DOTFILES/config/vimconfig
+export NVIMCONFIG=$CONFIG/vimconfig
 source $NVIMCONFIG/nvim_config_env.sh
 
 #SDKman
-export SDKMANCONFIG=$DOTFILES/config/sdkmanconfig
+export SDKMANCONFIG=$CONFIG/sdkmanconfig
 source $SDKMANCONFIG/sdkman_config_env.sh
 
 #SSH
-export SSHCONFIG=$DOTFILES/config/sshconfig
+export SSHCONFIG=$CONFIG/sshconfig
 source $SSHCONFIG/ssh_config_env.sh
 
  # vscode 
-export vscodeCONFIG=/Users/alorme/dotfiles/config/vscodeconfig ; 
+export vscodeCONFIG=$CONFIG/vscodeconfig ; 
 source $vscodeCONFIG/vscode_config_env.sh
 
  # alacritty 
-export alacrittyCONFIG=/Users/alorme/dotfiles/config/alacrittyconfig ; 
+export alacrittyCONFIG=$CONFIG/alacrittyconfig ; 
 source $alacrittyCONFIG/alacritty_config_env.sh
 
  # tmux 
-export tmuxCONFIG=/Users/alorme/dotfiles/config/tmuxconfig ; 
+export tmuxCONFIG=$CONFIG/tmuxconfig ; 
 source $tmuxCONFIG/tmux_config_env.sh
