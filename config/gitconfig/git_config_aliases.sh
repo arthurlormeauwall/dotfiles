@@ -20,6 +20,12 @@ alias gpull='git pull'
 alias gpwip='git add --all; git commit -m "working progress";git push;'
 alias gpf='git push --force'
 
+function grename {
+  git branch -m $1
+  git push origin -u $1
+}
+
+
 function gcreatenewbranch {
 gpullmaster
 gcko -b $1

@@ -1,3 +1,6 @@
 import =  [
    "/Users/alorme/dotfiles/config/alacrittyconfig/alacritty/themes/alacritty-themes/themes/ayu_light.toml"
 ]
+[font]
+size = 15
+
