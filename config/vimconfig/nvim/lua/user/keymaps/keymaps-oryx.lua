@@ -27,10 +27,10 @@ nnoremap <C-p> p
 nnoremap <C-v> V
 nnoremap V <C-v>
 
-nnoremap <A-d> <C-d>zz
-nnoremap <A-u> <C-u>zz
-nnoremap <A-j> 3j
-nnoremap <A-k> 3k
+nnoremap ∂ <C-d>zz
+nnoremap º <C-u>zz
+nnoremap Ï 3j
+nnoremap È 3k
 
 imap jk <ESC>
 vmap ui <ESC>
