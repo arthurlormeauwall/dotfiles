@@ -16,6 +16,7 @@ alias localenvs="nvim $LOCALDOTFILES/env.sh"
 
 alias zrc="nvim $HOME/.zshrc"
 alias home="cd $HOME"
+alias pushdotfilesSSH='pwd | pbcopy ; cd $DOTFILES ; ./pushToGHChangingSSH.sh ; cd $(pbpaste)'
 alias pushdotfiles='pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste)'
 
 function mkcd {
