@@ -4,16 +4,14 @@ function installConfig {
   #setSymlink
   #setlocaldotfiles
 
-  if [ $1 ]
-  then
-    if [ $1==debian ]
-    then
-     installApplicationsDebian
-    elif [ $1==mac ]
-    then
-     installApplicationsMac
-    fi
-  fi
+
+if [ $1 = "debian" ]
+then
+ installApplicationsDebian
+elif [ $1 = "mac" ]
+then
+ installApplicationsMac
+fi
 
   sourceAll
 }

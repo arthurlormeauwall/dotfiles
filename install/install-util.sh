@@ -11,24 +11,39 @@ function installApplicationsDebian {
 
 }
 
-function installapplicationsmac {
+function installApplicationsMac {
   echo "install applications for mac os"
 
+ ##########################
   echo "install homebrew"
+
   brewTestOutput=$(brew --version)
-  if [ brewTestOutput=='zsh: command not found: brew' ]
+  if [ $brewTestOutput = "zsh: command not found: brew" ]
   then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   else
     echo "homebrew already installed"
   fi
 
+ ##########################
   echo "install oh-my-zsh"
+  omzTestOutput=$(cd $HOME/.oh-my-zsh/)
+  if [ $omzTestOutput ]
+  then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  else
+    echo "oh-my-zsh already installed"
+  fi
 
+ ##########################
   echo "install neovim"
 
+
+ ##########################
   echo "install tmux"
 
+
+ ##########################
   echo "install alacritty"
 
 }
