@@ -1,14 +1,40 @@
 function installApplicationsDebian {
   echo "install applications for debian"
 
+ ##########################
   echo "install oh-my-zsh"
+  omzTestOutput=$(cd $HOME/.oh-my-zsh/)
+  if [ $omzTestOutput ]
+  then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  else
+    echo "oh-my-zsh is already installed"
+  fi
 
+ ##########################
   echo "install neovim"
+  nvimTestOutput=$(nvim --version)
+  if [ $nvimTestOutput = "zsh: command not found: nvim" ]
+  then
+    sudo apt-get install neovim
+  else
+    echo "neovim is already installed"
+  fi
 
+ ##########################
   echo "install tmux"
+  tmuxTestOutput=$(tmux --version)
+  if [ $tmuxTestOutput = "zsh: command not found: tmux" ]
+  then
+    sudo apt-get install tmux
+  else
+    echo "tmux is already installed"
+  fi
 
+ ##########################
   echo "install alacritty"
-
+  sudo apt-get install cargo
+  cargo install alacritty
 }
 
 function installApplicationsMac {
@@ -22,7 +48,7 @@ function installApplicationsMac {
   then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   else
-    echo "homebrew already installed"
+    echo "homebrew is already installed"
   fi
 
  ##########################
@@ -32,20 +58,32 @@ function installApplicationsMac {
   then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   else
-    echo "oh-my-zsh already installed"
+    echo "oh-my-zsh is already installed"
   fi
 
  ##########################
   echo "install neovim"
-
+  nvimTestOutput=$(nvim --version)
+  if [ $nvimTestOutput = "zsh: command not found: nvim" ]
+  then
+    brew install neovim
+  else
+    echo "neovim is already installed"
+  fi
 
  ##########################
   echo "install tmux"
-
+  tmuxTestOutput=$(tmux --version)
+  if [ $tmuxTestOutput = "zsh: command not found: tmux" ]
+  then
+    brew install tmux
+  else
+    echo "tmux is already installed"
+  fi
 
  ##########################
   echo "install alacritty"
-
+  brew install --cask alacritty
 }
 
 function sourceEnv {
