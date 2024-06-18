@@ -44,3 +44,7 @@ source $alacrittyCONFIG/alacritty_config_env.sh
  # tmux 
 export tmuxCONFIG=$CONFIG/tmuxconfig ; 
 source $tmuxCONFIG/tmux_config_env.sh
+
+ # java 
+export javaCONFIG=/Users/alorme/dotfiles/config/javaconfig ; 
+source $javaCONFIG/java_config_env.sh

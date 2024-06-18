@@ -2,6 +2,8 @@ alias commonconfig="nvim $commonCONFIG/common_config_aliases.sh"
 alias commonenv="nvim $commonCONFIG/common_config_env.sh" 
 alias commonconfigdir="cd $commonCONFIG"
 
+alias configlistconfig="nvim $commonCONFIG/configlist.sh"
+
 alias dotfiles="cd $HOME/dotfiles"
 alias localdotfiles='cd $LOCALDOTFILES'
 

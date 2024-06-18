@@ -1,4 +1,3 @@
-alias configlistconfig="nvim $DOTFILES/configlist.sh"
 alias configlist="echo '
 commonconfig
 gitconfig
@@ -12,4 +11,5 @@ vscodeconfig
 zshconfig
 alacrittyconfig
 tmuxconfig
+javaconfig
 '"

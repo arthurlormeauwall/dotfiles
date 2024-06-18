@@ -1,0 +1,6 @@
+alias javaconfig="nvim $javaCONFIG/java_config_aliases.sh" 
+alias javaenv="nvim $javaCONFIG/java_config_env.sh" 
+alias javaconfigdir="cd $javaCONFIG"
+alias javaconfig="nvim $javaCONFIG/java_config_aliases.sh" 
+alias javaenv="nvim $javaCONFIG/java_config_env.sh" 
+alias javaconfigdir="cd $javaCONFIG"
