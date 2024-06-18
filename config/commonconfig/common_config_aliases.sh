@@ -8,16 +8,16 @@ alias localdotfiles='cd $LOCALDOTFILES'
 alias config="cd $CONFIG"
 alias localconfig="cd $LOCALCONFIG"
 
-alias aliases="nvim $DOTFILES/aliases.sh" 
 alias localaliases="nvim $LOCALDOTFILES/aliases.sh" 
+alias aliases="nvim $commonCONFIG/aliases.sh" 
 
-alias envs="nvim $DOTFILES/env.sh"
+alias envs="nvim $commonCONFIG/env.sh"
 alias localenvs="nvim $LOCALDOTFILES/env.sh"
 
 alias zrc="nvim $HOME/.zshrc"
 alias home="cd $HOME"
-alias pushdotfilesSSH='pwd | pbcopy ; cd $DOTFILES ; ./pushToGHChangingSSH.sh ; cd $(pbpaste)'
-alias pushdotfiles='pwd | pbcopy ; cd $DOTFILES ; ./pushToGH.sh ; cd $(pbpaste)'
+alias pushdotfilesSSH='pwd | pbcopy ; cd $commonCONFIG/ ; ./pushToGHChangingSSH.sh ; cd $(pbpaste)'
+alias pushdotfiles='pwd | pbcopy ; cd $commonCONFIG/ ; ./pushToGH.sh ; cd $(pbpaste)'
 
 function mkcd {
   mkdir $1

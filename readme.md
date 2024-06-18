@@ -2,7 +2,9 @@
 
 This repo contain aliases, env and shell util function
 
-# App to install
+# Dependencies
+
+All can be installed via scrips (cf Install section)
 
 - Zsh shell
 - Oh-my zsh
@@ -10,13 +12,16 @@ This repo contain aliases, env and shell util function
 - alacritty
 - tmux
 
+
 # Install
 
-Make sure this repo is in 
+* Make sure this repo is in 
 
 $HOME/
 
-All paths in dotfiles/config/commonconfig/common_config_env.sh should be correct  
+-> All paths in dotfiles/config/commonconfig/common_config_env.sh should be correct  
+
+then : 
 
 '''
 cd install

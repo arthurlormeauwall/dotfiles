@@ -5,7 +5,7 @@ source $commonCONFIG/common_config_aliases.sh
 source $utilCONFIG/util_config_aliases.sh
 
 # configlist
-source $DOTFILES/configlist.sh
+source $commonCONFIG/configlist.sh
 
 #####################
 
