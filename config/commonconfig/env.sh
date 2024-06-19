@@ -46,5 +46,5 @@ export tmuxCONFIG=$CONFIG/tmuxconfig ;
 source $tmuxCONFIG/tmux_config_env.sh
 
  # java 
-export javaCONFIG=/Users/alorme/dotfiles/config/javaconfig ; 
+export javaCONFIG=$CONFIG/javaconfig ; 
 source $javaCONFIG/java_config_env.sh
