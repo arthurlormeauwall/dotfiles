@@ -87,8 +87,8 @@ function installApplicationsMac {
 }
 
 function sourceEnv {
-  echo "source common env in $HOME/dotfiles/config/commonconfig/common_config_env.sh"
-  source $HOME/dotfiles/config/commonconfig/common_config_env.sh
+  echo "source env in $HOME/dotfiles/config/commonconfig/env.sh"
+  source $HOME/dotfiles/config/commonconfig/env.sh
 }
 
 function sourceAll {
