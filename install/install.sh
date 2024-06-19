@@ -10,8 +10,8 @@ function installConfig {
     installApplicationsMac
   fi
 
-  #setSymlink
-  #setlocaldotfiles
+  setSymlink
+  setlocaldotfiles
   sourceAll
 }
 

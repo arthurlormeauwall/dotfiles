@@ -99,13 +99,14 @@ function sourceAll {
 function setSymlink {
   echo "Set symlink"
   rm -rf ~/.zshrc
-  rm -rf ~/.config/tmux/
+  rm -rf ~/.tmux.conf
+  rm -rf ~/.tmux.conftemp
   rm -rf ~/.config/alacritty/
   rm -rf ~/.config/nvim/
 
   ln -s $ZSHCONFIG/.zshrc ~/.zshrc
   ln -s $alacrittyCONFIG/alacritty  ~/.config/alacritty
-  ln -s $tmuxCONFIG/tmux ~/.config/tmux
+  ln -s $tmuxCONFIG/tmux/.tmux.conf ~/.tmux.conf
   ln -s $NVIMCONFIG/nvim ~/.config/nvim
 }
 
