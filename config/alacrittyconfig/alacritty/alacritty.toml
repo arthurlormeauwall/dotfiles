@@ -30,3 +30,5 @@ white   = '#dbdbdb'
 [font]
 size =13
 
+[env]
+term = "xterm-256color"

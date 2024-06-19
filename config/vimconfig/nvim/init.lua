@@ -4,6 +4,9 @@ require "user.options"
 require "user.lazy-init"
 require "user.lazy-config"
 
+vim.o.termguicolors = true
+vim.cmd'colorscheme onenord'
+
 --[[
 =====================================================================
 
