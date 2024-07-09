@@ -5,7 +5,7 @@ require "user.lazy-init"
 require "user.lazy-config"
 
 vim.o.termguicolors = true
-vim.cmd'colorscheme onenord'
+vim.cmd.colorscheme = "onenord"
 
 --[[
 =====================================================================
