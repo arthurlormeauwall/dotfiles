@@ -19,7 +19,6 @@ function mlogfile {
   mvn --log-file ./mvn.log clean install
 }
 
-
 function mvnrunut {
   mvn test -Dtest=/"$1#$2/"
 }
