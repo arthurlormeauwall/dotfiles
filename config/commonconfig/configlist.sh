@@ -12,4 +12,5 @@ zshconfig
 alacrittyconfig
 tmuxconfig
 javaconfig
+pythonconfig
 '"

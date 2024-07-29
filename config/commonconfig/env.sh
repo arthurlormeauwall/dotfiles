@@ -48,3 +48,7 @@ source $tmuxCONFIG/tmux_config_env.sh
  # java 
 export javaCONFIG=$CONFIG/javaconfig ; 
 source $javaCONFIG/java_config_env.sh
+
+ # python 
+export pythonCONFIG=$CONFIG/pythonconfig ; 
+source $pythonCONFIG/python_config_env.sh

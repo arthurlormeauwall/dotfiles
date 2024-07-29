@@ -41,3 +41,6 @@ source $tmuxCONFIG/tmux_config_aliases.sh
 
  # java 
 source $javaCONFIG/java_config_aliases.sh
+
+ # python 
+source $pythonCONFIG/python_config_aliases.sh
