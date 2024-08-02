@@ -52,3 +52,7 @@ source $javaCONFIG/java_config_env.sh
  # python 
 export pythonCONFIG=$CONFIG/pythonconfig ; 
 source $pythonCONFIG/python_config_env.sh
+
+ # docker 
+export dockerCONFIG=$CONFIG/dockerconfig ; 
+source $dockerCONFIG/docker_config_env.sh

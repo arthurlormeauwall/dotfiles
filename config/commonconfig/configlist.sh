@@ -13,4 +13,5 @@ alacrittyconfig
 tmuxconfig
 javaconfig
 pythonconfig
+dockerconfig
 '"
