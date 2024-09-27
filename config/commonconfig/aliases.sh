@@ -47,3 +47,6 @@ source $pythonCONFIG/python_config_aliases.sh
 
  # docker 
 source $dockerCONFIG/docker_config_aliases.sh
+
+ # keyboardconfig 
+source $keyboardconfigCONFIG/keyboardconfig_config_aliases.sh

@@ -4,7 +4,7 @@ alias vimenv='nvim $NVIMCONFIG/nvim_config_env.sh'
 
 alias vk='nvim .'
 alias v='nvim'
-alias vimkeymap="cd $NVIMCONFIG/nvim/lua/user"
+alias vimkeymap="cd $NVIMCONFIG/nvim/lua/user/keymaps"
 alias setMacVimKeybinding="cat $NVIMCONFIG/nvim/lua/user/keymaps_mac.lua >$NVIMCONFIG/nvim/lua/user/keymaps.lua"
 alias setPcVimKeybinding="cat $NVIMCONFIG/nvim/lua/user/keymaps_pc.lua > $NVIMCONFIG/nvim/lua/user/keymaps.lua"
 

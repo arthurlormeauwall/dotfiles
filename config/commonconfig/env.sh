@@ -56,3 +56,7 @@ source $pythonCONFIG/python_config_env.sh
  # docker 
 export dockerCONFIG=$CONFIG/dockerconfig ; 
 source $dockerCONFIG/docker_config_env.sh
+
+ # keyboardconfig 
+export keyboardconfigCONFIG=$CONFIG/keyboardconfigconfig ; 
+source $keyboardconfigCONFIG/keyboardconfig_config_env.sh
