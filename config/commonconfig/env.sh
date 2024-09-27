@@ -53,10 +53,6 @@ source $javaCONFIG/java_config_env.sh
 export pythonCONFIG=$CONFIG/pythonconfig ; 
 source $pythonCONFIG/python_config_env.sh
 
- # docker 
-export dockerCONFIG=$CONFIG/dockerconfig ; 
-source $dockerCONFIG/docker_config_env.sh
-
- # keyboardconfig 
-export keyboardconfigCONFIG=$CONFIG/keyboardconfigconfig ; 
-source $keyboardconfigCONFIG/keyboardconfig_config_env.sh
+ # keyboard 
+export keyboardCONFIG=$CONFIG/keyboardconfig ; 
+source $keyboardCONFIG/keyboard_config_env.sh

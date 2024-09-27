@@ -13,6 +13,5 @@ alacrittyconfig
 tmuxconfig
 javaconfig
 pythonconfig
-dockerconfig
-keyboardconfigconfig
+keyboardconfig
 '"

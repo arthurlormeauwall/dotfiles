@@ -45,8 +45,5 @@ source $javaCONFIG/java_config_aliases.sh
  # python 
 source $pythonCONFIG/python_config_aliases.sh
 
- # docker 
-source $dockerCONFIG/docker_config_aliases.sh
-
- # keyboardconfig 
-source $keyboardconfigCONFIG/keyboardconfig_config_aliases.sh
+ # keyboard 
+source $keyboardCONFIG/keyboard_config_aliases.sh
