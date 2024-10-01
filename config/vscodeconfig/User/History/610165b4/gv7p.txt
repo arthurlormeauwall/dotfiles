@@ -1,0 +1,8 @@
+project(atlCore)
+
+add_library(${PROJECT_NAME} STATIC IMPORTED)
+add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+
+set_target_properties(${PROJECT_NAME} PROPERTIES IMPORTED_LOCATION libatl_core.a)
+set_target_properties(${PROJECT_NAME} PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "/home/alorme/dev/cpp/Atl/atl_core/src")

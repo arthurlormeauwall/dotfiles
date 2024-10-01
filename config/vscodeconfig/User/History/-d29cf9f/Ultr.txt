@@ -1,0 +1,62 @@
+cmake_minimum_required(VERSION 3.25.1)
+
+project(atl_core)
+
+set(SOURCE_FOLDER "${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(CONTROLLER_FOLDER "${SOURCE_FOLDER}/controller")
+set(MODEL_FOLDER "${SOURCE_FOLDER}/model")
+set(OUT_FOLDER "${SOURCE_FOLDER}/out")
+set(SERVICE_FOLDER "${SOURCE_FOLDER}/service")
+set(TESTBUILDER_FOLDER "${SOURCE_FOLDER}/testbuilder")
+
+add_library(${PROJECT_NAME} STATIC
+    ${CONTROLLER_FOLDER}/AtlController.cpp
+    ${CONTROLLER_FOLDER}/AtlController.h
+
+    ${MODEL_FOLDER}/ChildrenResult.h
+    ${MODEL_FOLDER}/Model.h
+    ${MODEL_FOLDER}/Result.h
+    ${MODEL_FOLDER}/StackMap.h
+    ${MODEL_FOLDER}/TestData.h
+
+    ${OUT_FOLDER}/consoleOutput/ConsoleOutputWriter.cpp
+    ${OUT_FOLDER}/consoleOutput/ConsoleOutputWriter.h
+    ${OUT_FOLDER}/consoleOutput/ConsolePresenter.cpp
+    ${OUT_FOLDER}/consoleOutput/ConsolePresenter.h
+    ${OUT_FOLDER}/consoleOutput/ConsoleResultStringWriter.cpp
+    ${OUT_FOLDER}/consoleOutput/ConsoleResultStringWriter.h
+    ${OUT_FOLDER}/consoleOutput/style/color/ConsoleColorHepers.cpp
+    ${OUT_FOLDER}/consoleOutput/style/color/ConsoleColorHepers.h
+    ${OUT_FOLDER}/consoleOutput/style/color/AinsiConsoleColor.h
+
+    ${OUT_FOLDER}/output/OutputWriter.h
+
+    ${OUT_FOLDER}/views/Views.cpp
+    ${OUT_FOLDER}/views/Views.h
+    ${OUT_FOLDER}/views/AllTestView.h
+    ${OUT_FOLDER}/views/CommonViews.h
+    ${OUT_FOLDER}/views/ModuleView.h
+    ${OUT_FOLDER}/views/ResultView.h
+    ${OUT_FOLDER}/views/TestClassView.h
+    ${OUT_FOLDER}/views/UnitTestView.h
+
+    ${SERVICE_FOLDER}/*.cpp
+    ${SERVICE_FOLDER}/*.h
+    ${SERVICE_FOLDER}/assertion/*.cpp
+    ${SERVICE_FOLDER}/assertion/*.h
+
+    ${TESTBUILDER_FOLDER}/*.cpp
+    ${TESTBUILDER_FOLDER}/*.h
+)
+
+add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+target_include_directories(${PROJECT_NAME}
+	PUBLIC
+		${SOURCE_FOLDER}
+)
+
+target_compile_features(${PROJECT_NAME}
+	PRIVATE
+		cxx_std_11
+)

@@ -1,0 +1,14 @@
+project(atlCore)
+
+add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+target_include_directories(${PROJECT_NAME}
+	PUBLIC
+		"/home/alorme/dev/cpp/Atl/atl_core/src"
+)
+
+target_compile_features(${PROJECT_NAME}
+	PRIVATE
+		cxx_std_11
+)
+

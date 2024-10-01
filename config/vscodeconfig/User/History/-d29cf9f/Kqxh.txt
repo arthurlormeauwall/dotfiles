@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.25.1)
+
+project(atl_core)
+
+add_subdirectory(src/controller)
+
+add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+target_include_directories(${PROJECT_NAME}
+	PUBLIC
+		${SOURCE_FOLDER}
+)
+
+target_compile_features(${PROJECT_NAME}
+	PRIVATE
+		cxx_std_11
+)

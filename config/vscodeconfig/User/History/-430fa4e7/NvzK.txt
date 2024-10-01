@@ -1,0 +1,15 @@
+project(atl_app)
+
+add_executable(${PROJECT_NAME}
+	src/main.cpp
+)
+
+target_link_libraries(${PROJECT_NAME}
+	PUBLIC
+		atl_core_lib/libatl_core.a
+)
+
+target_link_libraries(${PROJECT_NAME}
+	PUBLIC
+		aLibTest
+)

@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.25.1) # 3.8.0 is minimum version that allow Linux remote building and debugging
+project(CMake-Example)
+
+
+# Enforce c++11 standard.
+set (CMAKE_CXX_STANDARD 11)
+
+
+# The version number.
+set(Example_VERSION_MAJOR 2)
+set(Example_VERSION_MINOR 3)
+set(Example_VERSION_PATCH 1)
+
+
+# This project consist of 3 components, each in one directory, so add each of them
+add_subdirectory(DynamicLib)
+add_subdirectory(StaticLib)
+add_subdirectory(DemoApp)

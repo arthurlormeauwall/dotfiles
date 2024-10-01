@@ -56,3 +56,7 @@ source $pythonCONFIG/python_config_env.sh
  # keyboard 
 export keyboardCONFIG=$CONFIG/keyboardconfig ; 
 source $keyboardCONFIG/keyboard_config_env.sh
+
+ # cmake 
+export cmakeCONFIG=$CONFIG/cmakeconfig ; 
+source $cmakeCONFIG/cmake_config_env.sh

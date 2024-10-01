@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.25.1)
+project(atl_app)
+
+add_executable(${PROJECT_NAME}
+	src/main.cpp
+)
+
+target_link_libraries(${PROJECT_NAME}
+	PUBLIC
+		atl_core_lib/libatl_core.a
+)
+
+add_subdirectory("../libs/aLib/test")
+target_link_libraries(${PROJECT_NAME}
+	PUBLIC
+		aLibTest
+)

@@ -14,4 +14,5 @@ tmuxconfig
 javaconfig
 pythonconfig
 keyboardconfig
+cmakeconfig
 '"

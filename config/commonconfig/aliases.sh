@@ -47,3 +47,6 @@ source $pythonCONFIG/python_config_aliases.sh
 
  # keyboard 
 source $keyboardCONFIG/keyboard_config_aliases.sh
+
+ # cmake 
+source $cmakeCONFIG/cmake_config_aliases.sh

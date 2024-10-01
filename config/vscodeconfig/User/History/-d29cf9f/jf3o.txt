@@ -1,0 +1,45 @@
+project(atl_core)
+
+set(SOURCE_FOLDER "${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(CONTROLLER_FOLDER "${SOURCE_FOLDER}/controller")
+set(MODEL_FOLDER "${SOURCE_FOLDER}/model")
+set(OUT_FOLDER "${SOURCE_FOLDER}/out")
+set(SERVICE_FOLDER "${SOURCE_FOLDER}/service")
+set(TESTBUILDER_FOLDER "${SOURCE_FOLDER}/testbuilder")
+
+add_library(${PROJECT_NAME} STATIC
+    ${CONTROLLER_FOLDER}/*.cpp
+    ${CONTROLLER_FOLDER}/*.h
+
+    ${MODEL_FOLDER}/*.cpp
+    ${MODEL_FOLDER}/*.h
+
+    ${OUT_FOLDER}/consoleOutput/*.cpp
+    ${OUT_FOLDER}/consoleOutput/*.h
+    ${OUT_FOLDER}/consoleOutput/style/color/*.cpp
+    ${OUT_FOLDER}/consoleOutput/style/color*.h
+    ${OUT_FOLDER}/output/*.cpp
+    ${OUT_FOLDER}/output/*.h
+    ${OUT_FOLDER}/views/*.cpp
+    ${OUT_FOLDER}/views/*.h
+
+    ${SERVICE_FOLDER}/*.cpp
+    ${SERVICE_FOLDER}/*.h
+    ${SERVICE_FOLDER}/assertion/*.cpp
+    ${SERVICE_FOLDER}/assertion/*.h
+
+    ${TESTBUILDER_FOLDER}/*.cpp
+    ${TESTBUILDER_FOLDER}/*.h
+)
+
+add_library(libs::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+target_include_directories(${PROJECT_NAME}
+	PUBLIC
+		${SOURCE_FOLDER}
+)
+
+target_compile_features(${PROJECT_NAME}
+	PRIVATE
+		cxx_std_11
+)

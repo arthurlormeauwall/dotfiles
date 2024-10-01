@@ -2,9 +2,11 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/alorme/dev/cpp/Atl": "__default__profile__",
-            "file:///home/alorme/dev/Atl": "__default__profile__",
-            "file:///home/alorme/dev/test": "__default__profile__"
+            "file:///home/alorme/.config/Code": "__default__profile__",
+            "file:///home/alorme/dotfiles/config/vscodeconfig/User": "__default__profile__",
+            "file:///home/alorme/dev/cpp/nosrecettes_front": "__default__profile__",
+            "file:///home/alorme/dev/nosrecettes_back": "__default__profile__",
+            "file:///home/alorme/dev/cpp/Atl": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -16,7 +18,7 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/alorme/dev/test"
+                "folderUri": "file:///home/alorme/dev/cpp/Atl"
             }
         ],
         "emptyWindows": []
@@ -80,34 +82,56 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/alorme/dev/test",
-                                        "path": "/home/alorme/dev/test",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/test"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/alorme/dev/Atl",
-                                        "path": "/home/alorme/dev/Atl",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/dev/Atl"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/alorme/dev/cpp/Atl",
                                         "path": "/home/alorme/dev/cpp/Atl",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/dev/cpp/Atl"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alorme/dev/nosrecettes_back",
+                                        "path": "/home/alorme/dev/nosrecettes_back",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/nosrecettes_back"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alorme/dev/cpp/nosrecettes_front",
+                                        "path": "/home/alorme/dev/cpp/nosrecettes_front",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dev/cpp/nosrecettes_front"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alorme/dotfiles/config/vscodeconfig/User",
+                                        "path": "/home/alorme/dotfiles/config/vscodeconfig/User",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/dotfiles/config/vscodeconfig/User"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/alorme/.config/Code",
+                                        "path": "/home/alorme/.config/Code",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/Code"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -164,6 +188,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -750,10 +781,6 @@
                     {
                         "id": "workbench.view.extensions",
                         "label": "E&&xtensions"
-                    },
-                    {
-                        "id": "workbench.view.extension.test",
-                        "label": "T&&esting"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1685,15 +1712,15 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 256,
+            "sideBarWidth": 279,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/alorme/dev/test",
-            "backupPath": "/home/alorme/.config/Code/Backups/3ec6240641a3a7306315df7b8bacaad6",
+            "folder": "file:///home/alorme/dev/cpp/Atl",
+            "backupPath": "/home/alorme/.config/Code/Backups/dc1d8ceee226ff873396339d090d091c",
             "uiState": {
                 "mode": 0,
                 "x": 448,
