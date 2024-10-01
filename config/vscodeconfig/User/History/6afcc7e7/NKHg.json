@@ -1,0 +1,35 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+j",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+            "after": ["3", "j"]
+          }
+    },
+    {
+        "key": "alt+k",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+            "after": ["3", "k"]
+          }
+    },
+    {
+        "key": "alt+d",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+            "after": ["ctrl", "d"]
+          }
+    },
+    {
+        "key": "alt+u",
+        "command": "vim.remap",
+        "when": "vim.mode == 'Normal'",
+        "args": {
+            "after": ["ctrl", "u"]
+          }
+    }
+]

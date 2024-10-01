@@ -1,0 +1,8 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "alt+j",
+        "command": "3j",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'"
+    }
+]
