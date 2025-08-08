@@ -40,7 +40,6 @@ endfunction
 nnoremap <C-n> :call NumberToggle()<CR>
 ]])
 
-
 --half page then zz to put cursor middle of screen
 keymap("n", "<A-d>", "<C-d>zz", opts)
 keymap("n", "<A-u>", "<C-u>zz", opts)
@@ -86,7 +85,7 @@ keymap("v", "ui", "<ESC>", opts)
 keymap("v", "<S-j>", ":m .+1<CR>==", opts)
 keymap("v", "<S-k>", ":m .-2<CR>==", opts)
 --keymap("v", "p", '"_dP', opts)
-  
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)

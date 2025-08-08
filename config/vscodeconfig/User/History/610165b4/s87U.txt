@@ -1,6 +1,0 @@
-add_library(atlCore STATIC IMPORTED)
-add_library(libs::atlCore ALIAS atlCore)
-
-
-set_target_properties(atlCore PROPERTIES IMPORTED_LOCATION libatl_core.a)
-set_target_properties(atlCore PROPERTIES INTERFACE_INCLUDE_DIRECTORIES "/home/alorme/dev/cpp/Atl/atl_core/src")

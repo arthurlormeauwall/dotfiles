@@ -1,5 +1,0 @@
-require "user.plugins"
-require "user.keymaps.keymaps"
-require "user.theme"
-require "user.options"
-require "user.treesitter"

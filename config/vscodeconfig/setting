@@ -1,5 +1,0 @@
-{
-    "workbench.colorTheme": "Visual Studio 2017 Light - C++",
-    "vim.vimrc.path": "$HOME/dotfiles/config/vimconfig/nvim/lua/user/keymaps/.vimrc",
-    "vim.vimrc.enable": true
-}
