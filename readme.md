@@ -28,3 +28,4 @@ cd install
 source install.sh
 installConfig {'debian' or 'mac'}
 '''
+git test
